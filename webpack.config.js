@@ -9,7 +9,11 @@ module.exports = {
   module: {
     rules: [
       { test: /\.jsx?$/, exclude: /node_modules/, use: "babel-loader" },
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader" }
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: ["babel-loader", "awesome-typescript-loader"]
+      }
     ]
   }
 };
