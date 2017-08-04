@@ -1,11 +1,13 @@
+import * as _ from "lodash";
+
 export default class TsClass {
-  private value: string;
+  private value: string[];
 
   public constructor() {
-    this.value = "ts";
+    this.value = ["t", "s"];
   }
 
   public getValue() {
-    return this.value;
+    return _(this.value).reduce((concat, item) => (concat = concat + item), "");
   }
 }

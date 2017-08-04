@@ -1,3 +1,6 @@
+import _ from "lodash";
+
 export default class JsClass {
-  getValue = () => "js";
+  getValue = () =>
+    _(["j", "s"]).reduce((concat, item) => (concat = concat + item), "");
 }
