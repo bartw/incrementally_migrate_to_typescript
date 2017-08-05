@@ -36,8 +36,10 @@
   },
   "homepage": "https://github.com/bartw/incrementally_migrate_to_typescript#readme",
   "devDependencies": {
-    "@types/jest": "^20.0.5",
+    "@types/jest": "^20.0.6",
     "@types/lodash": "^4.14.71",
+    "@types/react": "^16.0.0",
+    "@types/react-dom": "^15.5.2",
     "awesome-typescript-loader": "^3.2.2",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
